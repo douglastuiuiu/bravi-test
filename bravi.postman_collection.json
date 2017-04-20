@@ -1,0 +1,95 @@
+{
+	"variables": [],
+	"info": {
+		"name": "bravi",
+		"_postman_id": "44bb8254-cfae-ce97-73db-f9d9efff86b8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"request": {
+				"url": "http://localhost:3333/api/contact",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"url": "http://localhost:3333/api/contact/58f7f06d53c607337c5124b9",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"url": "http://localhost:3333/api/contact",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\": \"48 3242 3806\",\n\t\"email\": \"doglastuiuiu@gmail.com\",\n\t\"whatsapp\": \"48 99174 7400\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"url": "http://localhost:3333/api/contact/58f7f06d53c607337c5124b9",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"url": "http://localhost:3333/api/contact/58f7faaea04bd936e6626900",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"whatsapp\": \"48 0000000000\"\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Weather in my city",
+			"request": {
+				"url": "http://localhost:4444/Palhoça",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
